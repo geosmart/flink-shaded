@@ -1,0 +1,457 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00)
+Maven home: C:\Dev\Maven\3.2.5\bin\..
+Java version: 1.8.0_212, vendor: AdoptOpenJDK
+Java home: C:\Dev\Java\8\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\Dev\Maven\3.2.5\bin\..\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\Zento\.m2\settings.xml
+[DEBUG] Using local repository at C:\Users\Zento\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\Zento\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.apache.flink:flink-shaded:pom:7.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.apache:apache:pom:18: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0, C:\Dev\Repos\flink-shaded\flink-shaded-hadoop-2\pom.xml, line 36, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] Resolving plugin prefix dependency from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix dependency to org.apache.maven.plugins:maven-dependency-plugin from POM org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[DEBUG] Tasks:   [dependency:tree]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-shaded-hadoop-2 2.4.1-7.0
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin prefix dependency from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix dependency to org.apache.maven.plugins:maven-dependency-plugin from POM org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.apache.flink:flink-shaded-hadoop-2:2.4.1-7.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [apache.snapshots (https://repository.apache.org/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-dependency-plugin:2.10:tree (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appendOutput default-value="false">${appendOutput}</appendOutput>
+  <excludes>${excludes}</excludes>
+  <includes>${includes}</includes>
+  <localRepository default-value="${localRepository}"/>
+  <output>${output}</output>
+  <outputFile>${outputFile}</outputFile>
+  <outputType default-value="text">${outputType}</outputType>
+  <project default-value="${project}"/>
+  <scope>${scope}</scope>
+  <skip default-value="false">${skip}</skip>
+  <tokens default-value="standard">${tokens}</tokens>
+  <verbose default-value="false">${verbose}</verbose>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=154, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=48, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5, ConflictResolver.conflictItemCount=120, DefaultDependencyCollector.collectTime=210, DefaultDependencyCollector.transformTime=10}
+[DEBUG] org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[DEBUG]    com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.15:provided
+[DEBUG]    org.apache.commons:commons-compress:jar:1.18:compile
+[DEBUG]    org.apache.avro:avro:jar:1.8.2:compile
+[DEBUG]       org.codehaus.jackson:jackson-core-asl:jar:1.9.13:compile
+[DEBUG]       org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:compile
+[DEBUG]       com.thoughtworks.paranamer:paranamer:jar:2.7:compile
+[DEBUG]       org.xerial.snappy:snappy-java:jar:1.1.4:compile (version managed from 1.1.1.3 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       org.tukaani:xz:jar:1.5:compile
+[DEBUG]    org.apache.hadoop:hadoop-common:jar:2.4.1:compile
+[DEBUG]       org.apache.hadoop:hadoop-annotations:jar:2.4.1:compile
+[DEBUG]          jdk.tools:jdk.tools:jar:1.6:system
+[DEBUG]       com.google.guava:guava:jar:11.0.2:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.3.1:compile (version managed from 1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       org.apache.commons:commons-math3:jar:3.5:compile (version managed from 3.1.1 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       xmlenc:xmlenc:jar:0.52:compile
+[DEBUG]       commons-httpclient:commons-httpclient:jar:3.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.10:compile (version managed from 1.4 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       commons-io:commons-io:jar:2.4:compile
+[DEBUG]       commons-net:commons-net:jar:3.1:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.2:compile (version managed from 3.2.1 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       javax.servlet:servlet-api:jar:2.5:compile
+[DEBUG]       commons-el:commons-el:jar:1.0:runtime
+[DEBUG]       commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]       log4j:log4j:jar:1.2.17:compile
+[DEBUG]       net.java.dev.jets3t:jets3t:jar:0.9.0:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.5.3:compile (version managed from 4.1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.4.6:compile (version managed from 4.1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       commons-configuration:commons-configuration:jar:1.7:compile (version managed from 1.6 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]       org.slf4j:slf4j-log4j12:jar:1.7.15:compile (version managed from 1.7.5 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[DEBUG]       org.apache.hadoop:hadoop-auth:jar:2.4.1:compile
+[DEBUG]       com.jcraft:jsch:jar:0.1.42:compile
+[DEBUG]       org.apache.zookeeper:zookeeper:jar:3.4.10:compile (version managed from 3.4.5 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]    commons-beanutils:commons-beanutils:jar:1.9.3:compile
+[DEBUG]    org.apache.hadoop:hadoop-hdfs:jar:2.4.1:compile
+[DEBUG]       commons-daemon:commons-daemon:jar:1.0.13:compile
+[DEBUG]    org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.4.1:compile
+[DEBUG]    org.apache.hadoop:hadoop-yarn-client:jar:2.4.1:compile
+[DEBUG]       com.sun.jersey:jersey-client:jar:1.9:compile
+[DEBUG]       org.apache.hadoop:hadoop-yarn-api:jar:2.4.1:compile
+[DEBUG]    org.apache.hadoop:hadoop-yarn-common:jar:2.4.1:compile
+[DEBUG]       javax.xml.bind:jaxb-api:jar:2.2.2:compile
+[DEBUG]          javax.xml.stream:stax-api:jar:1.0-2:compile
+[DEBUG]          javax.activation:activation:jar:1.1:compile
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:tree (default-cli) @ flink-shaded-hadoop-2 ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=335, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=82, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5, ConflictResolver.conflictItemCount=199, DefaultDependencyCollector.collectTime=300, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.apache.maven.plugins:maven-dependency-plugin:jar:2.10:
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]       backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]    org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.2:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.2:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]             org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]             commons-codec:commons-codec:jar:1.3:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.3.1:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.6:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.0.4:compile
+[DEBUG]    commons-io:commons-io:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-fml:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.1.7:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.5:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.9:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.20:compile
+[DEBUG]    org.apache.maven.shared:file-management:jar:1.2.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-io:jar:1.1:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-6:compile
+[DEBUG]    org.codehaus.plexus:plexus-io:jar:2.4:compile
+[DEBUG]    org.apache.maven.shared:maven-dependency-analyzer:jar:1.6:compile
+[DEBUG]       org.ow2.asm:asm:jar:5.0.2:compile
+[DEBUG]    org.apache.maven.shared:maven-dependency-tree:jar:2.2:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:0.9.0.M2:compile
+[DEBUG]    org.apache.maven.shared:maven-common-artifact-filters:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:2.1.1:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]    commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]    classworlds:classworlds:jar:1.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-dependency-plugin:2.10
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-dependency-plugin:2.10
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-dependency-plugin:2.10
+[DEBUG]   Included: org.apache.maven.plugins:maven-dependency-plugin:jar:2.10
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.2
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.3
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.3.1
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.7.0
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.6
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.0.4
+[DEBUG]   Included: commons-io:commons-io:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-fml:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.1.7
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.5
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[DEBUG]   Included: org.apache.maven.shared:file-management:jar:1.2.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-io:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-analyzer:jar:1.6
+[DEBUG]   Included: org.ow2.asm:asm:jar:5.0.2
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:2.2
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:2.1.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.6
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-dependency-plugin:2.10:tree from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-dependency-plugin:2.10, parent: sun.misc.Launcher$AppClassLoader@7852e922]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-dependency-plugin:2.10:tree' with basic configurator -->
+[DEBUG]   (f) appendOutput = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///C:/Users/Zento/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) outputType = text
+[DEBUG]   (f) project = MavenProject: org.apache.flink:flink-shaded-hadoop-2:2.4.1-7.0 @ C:\Dev\Repos\flink-shaded\flink-shaded-hadoop-2\pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) tokens = standard
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] building maven31 dependency graph for org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0 with Maven31DependencyGraphBuilder
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=154, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=48, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=120, DefaultDependencyCollector.collectTime=0, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[DEBUG]    com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.15:provided
+[DEBUG]    org.apache.commons:commons-compress:jar:1.18:compile
+[DEBUG]    org.apache.avro:avro:jar:1.8.2:compile
+[DEBUG]       org.codehaus.jackson:jackson-core-asl:jar:1.9.13:compile
+[DEBUG]       org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:compile
+[DEBUG]       com.thoughtworks.paranamer:paranamer:jar:2.7:compile
+[DEBUG]       org.xerial.snappy:snappy-java:jar:1.1.4:compile (version managed from 1.1.1.3 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       org.tukaani:xz:jar:1.5:compile
+[DEBUG]    org.apache.hadoop:hadoop-common:jar:2.4.1:compile
+[DEBUG]       org.apache.hadoop:hadoop-annotations:jar:2.4.1:compile
+[DEBUG]          jdk.tools:jdk.tools:jar:1.6:system
+[DEBUG]       com.google.guava:guava:jar:11.0.2:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.3.1:compile (version managed from 1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       org.apache.commons:commons-math3:jar:3.5:compile (version managed from 3.1.1 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       xmlenc:xmlenc:jar:0.52:compile
+[DEBUG]       commons-httpclient:commons-httpclient:jar:3.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.10:compile (version managed from 1.4 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       commons-io:commons-io:jar:2.4:compile
+[DEBUG]       commons-net:commons-net:jar:3.1:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.2:compile (version managed from 3.2.1 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       javax.servlet:servlet-api:jar:2.5:compile
+[DEBUG]       commons-el:commons-el:jar:1.0:runtime
+[DEBUG]       commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]       log4j:log4j:jar:1.2.17:compile
+[DEBUG]       net.java.dev.jets3t:jets3t:jar:0.9.0:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.5.3:compile (version managed from 4.1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.4.6:compile (version managed from 4.1.2 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       commons-configuration:commons-configuration:jar:1.7:compile (version managed from 1.6 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]       org.slf4j:slf4j-log4j12:jar:1.7.15:compile (version managed from 1.7.5 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]       com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[DEBUG]       org.apache.hadoop:hadoop-auth:jar:2.4.1:compile
+[DEBUG]       com.jcraft:jsch:jar:0.1.42:compile
+[DEBUG]       org.apache.zookeeper:zookeeper:jar:3.4.10:compile (version managed from 3.4.5 by org.apache.flink:flink-shaded-hadoop-2:${hadoop.version}-7.0)
+[DEBUG]    commons-beanutils:commons-beanutils:jar:1.9.3:compile
+[DEBUG]    org.apache.hadoop:hadoop-hdfs:jar:2.4.1:compile
+[DEBUG]       commons-daemon:commons-daemon:jar:1.0.13:compile
+[DEBUG]    org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.4.1:compile
+[DEBUG]    org.apache.hadoop:hadoop-yarn-client:jar:2.4.1:compile
+[DEBUG]       com.sun.jersey:jersey-client:jar:1.9:compile
+[DEBUG]       org.apache.hadoop:hadoop-yarn-api:jar:2.4.1:compile
+[DEBUG]    org.apache.hadoop:hadoop-yarn-common:jar:2.4.1:compile
+[DEBUG]       javax.xml.bind:jaxb-api:jar:2.2.2:compile
+[DEBUG]          javax.xml.stream:stax-api:jar:1.0-2:compile
+[DEBUG]          javax.activation:activation:jar:1.1:compile
+[INFO] org.apache.flink:flink-shaded-hadoop-2:jar:2.4.1-7.0
+[INFO] +- com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.15:provided
+[INFO] +- org.apache.commons:commons-compress:jar:1.18:compile
+[INFO] +- org.apache.avro:avro:jar:1.8.2:compile
+[INFO] |  +- org.codehaus.jackson:jackson-core-asl:jar:1.9.13:compile
+[INFO] |  +- org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:compile
+[INFO] |  +- com.thoughtworks.paranamer:paranamer:jar:2.7:compile
+[INFO] |  +- org.xerial.snappy:snappy-java:jar:1.1.4:compile
+[INFO] |  \- org.tukaani:xz:jar:1.5:compile
+[INFO] +- org.apache.hadoop:hadoop-common:jar:2.4.1:compile
+[INFO] |  +- org.apache.hadoop:hadoop-annotations:jar:2.4.1:compile
+[INFO] |  |  \- jdk.tools:jdk.tools:jar:1.6:system
+[INFO] |  +- com.google.guava:guava:jar:11.0.2:compile
+[INFO] |  +- commons-cli:commons-cli:jar:1.3.1:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.5:compile
+[INFO] |  +- xmlenc:xmlenc:jar:0.52:compile
+[INFO] |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.10:compile
+[INFO] |  +- commons-io:commons-io:jar:2.4:compile
+[INFO] |  +- commons-net:commons-net:jar:3.1:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] |  +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] |  +- commons-el:commons-el:jar:1.0:runtime
+[INFO] |  +- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] |  +- log4j:log4j:jar:1.2.17:compile
+[INFO] |  +- net.java.dev.jets3t:jets3t:jar:0.9.0:compile
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.3:compile
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.6:compile
+[INFO] |  |  \- com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- commons-configuration:commons-configuration:jar:1.7:compile
+[INFO] |  |  \- commons-digester:commons-digester:jar:1.8.1:compile
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.7.15:compile
+[INFO] |  +- com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[INFO] |  +- org.apache.hadoop:hadoop-auth:jar:2.4.1:compile
+[INFO] |  +- com.jcraft:jsch:jar:0.1.42:compile
+[INFO] |  \- org.apache.zookeeper:zookeeper:jar:3.4.10:compile
+[INFO] +- commons-beanutils:commons-beanutils:jar:1.9.3:compile
+[INFO] +- org.apache.hadoop:hadoop-hdfs:jar:2.4.1:compile
+[INFO] |  \- commons-daemon:commons-daemon:jar:1.0.13:compile
+[INFO] +- org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.4.1:compile
+[INFO] +- org.apache.hadoop:hadoop-yarn-client:jar:2.4.1:compile
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.9:compile
+[INFO] |  \- org.apache.hadoop:hadoop-yarn-api:jar:2.4.1:compile
+[INFO] \- org.apache.hadoop:hadoop-yarn-common:jar:2.4.1:compile
+[INFO]    \- javax.xml.bind:jaxb-api:jar:2.2.2:compile
+[INFO]       +- javax.xml.stream:stax-api:jar:1.0-2:compile
+[INFO]       \- javax.activation:activation:jar:1.1:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.016 s
+[INFO] Finished at: 2020-01-08T13:52:57+01:00
+[INFO] Final Memory: 18M/307M
+[INFO] ------------------------------------------------------------------------
